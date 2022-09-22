@@ -1,0 +1,7 @@
+list_module.list:
+  path: /articlelist/page
+  defaults:
+    _controller: '\Drupal\list_module\Controller\ListController::list'
+    _title: 'List articles from JSON API source'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,11 @@
+post_module.post:
+  path: /post/{p_id}
+  defaults:
+    _controller: '\Drupal\post_module\Controller\PostController::post'
+    _title: 'Show article from JSON API source list'
+  options:
+    parameters:
+      p_id:
+        type: p_id
+  requirements:
+    _permission: 'access content'
