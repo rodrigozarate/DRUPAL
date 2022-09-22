@@ -1,3 +1,18 @@
+# Modules to display JSON objects in Drupal
+## List
+Get the info from https://www.zarate.com.co/api/films
+## Post
+Get the info from https://www.zarate.com.co/api/films/{id}
+
+More info to fetch in
+
+https://www.zarate.com.co/api/directors
+https://www.zarate.com.co/api/producer
+
+### Blog explainig the project:
+
+[Medium][medium]
+
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
 Drupal is an open source content management platform supporting a variety of
@@ -21,41 +36,18 @@ the [Issue forks & merge requests page][issue forks].
 
 ## Usage
 
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
+Download and extract
 
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
+Copy the list_module and post_module directories inside your modules directory in your own Drupal instalation
 
-## Changelog
+Activate the modules by checking the tick marks in the extend menu of the admin panel.
 
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
+Access the list by visiting you instalation on the browser at /articlelist/page
+### ie https://localhost:8443/articlelist/page
 
-## Security
+Access each film dedicated page by visiting you instalation on the browser at /post/{id} 
+### ie https://localhost:8443/post/1
 
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
 
 Learn about the [Drupal trademark and logo policy here][trademark].
 
@@ -73,3 +65,4 @@ Learn about the [Drupal trademark and logo policy here][trademark].
 [service providers]: https://www.drupal.org/drupal-services
 [support]: https://www.drupal.org/support
 [trademark]: https://www.drupal.com/trademark
+[medium]: https://medium.com/@rodrigozaratealgecira/drupal-9-fetch-and-display-nodes-from-api-tutorial-74920e4e150f
